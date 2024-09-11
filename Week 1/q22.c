@@ -9,12 +9,20 @@ struct node {
 
 // Solution 1: Using a while loop
 int sumListWhileLoop(struct node *l) {
-    // TODO
-    return 0;
+    int sum = 0;
+    struct node *curr = l;
+    while (curr != NULL) {
+        sum += curr->value;
+        curr = curr->next;
+    }
+    return sum;
 }
 
 // Solution 2: Using a for loop
 int sumListForLoop(struct node *l) {
-    // TODO
-    return 0;
+    int sum = 0;
+    for (struct node *curr = l; curr != NULL; curr = curr->next) {
+        sum += curr->value;
+    }
+    return sum;
 }

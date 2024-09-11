@@ -8,7 +8,7 @@ struct node {
 
 int main(void) {
 	// Can we allocate to the heap rather than the stack?
-	struct node n;
-	n.value = 42;
-	n.next = NULL;
+	struct node *n = malloc(sizeof(struct node));
+	(*n).value = 42;
+	n->next = NULL;
 }
