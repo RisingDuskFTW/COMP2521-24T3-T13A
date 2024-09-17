@@ -11,6 +11,20 @@ struct node {
 
 // Recursive Solution
 struct node *listDelete(struct node *l, int value) {
-    // TODO
-    return NULL;
+    // base case
+    if (l == NULL) {
+        return NULL;
+    }
+
+    // check if this is the node to delete
+    if (l->data == value) {
+        struct node *restOfList = l->next;
+        free(l);
+        return restOfList;
+    }
+
+    // recursive case
+    struct node *restOfList = listDelete(l->next, value);
+    l->next = restOfList;
+    return l;
 }

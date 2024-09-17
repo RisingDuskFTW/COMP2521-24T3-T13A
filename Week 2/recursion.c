@@ -18,6 +18,11 @@ int main(void) {
 int factorial(int num) {
     assert(num >= 0);
 
-    // TODO
-    return 42;
+    // base case
+    if (num == 1 || num == 0) {
+        return 1;
+    }
+
+    // recursive case
+    return num * factorial(num - 1);
 }

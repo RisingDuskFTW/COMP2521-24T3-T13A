@@ -9,12 +9,22 @@ struct node {
 
 // Solution 1: Iterative Solution
 int listLength(struct node *l) {
-    // TODO
-    return 42;
+
+    int count = 0;
+    for (struct node *curr = l; curr != NULL; curr = curr->next) {
+        count++;
+    }
+    return count;
 }
 
 // Solution 2: Recursive Solution
 int listLengthRec(struct node *l) {
-    // TODO
-    return 42;
+
+    // base case
+    if (l == NULL) {
+        return 0;
+    }
+
+    // recursive case
+    return 1 + listLengthRec(l->next);
 }

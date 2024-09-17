@@ -10,12 +10,26 @@ struct node {
 
 // Solution 1: Iterative Solution
 int listCountOdds(struct node *l) {
-    // TODO
-    return 42;
+    int count = 0;
+    for (struct node *curr = l; curr != NULL; curr = curr->next) {
+        if (curr->data % 2 == 1) {
+            count++;
+        }
+    }
+    return count;
 }
 
 // Solution 2: Recursive Solution
 int listCountOddsRec(struct node *l) {
-    // TODO
-    return 42;
+
+    // base case
+    if (l == NULL) {
+        return 0;
+    }
+
+    // recursive case
+    // if (l->data % 2 == 1) {
+    //     return 1 + listCountOddsRec(l->next);
+    // }
+    return (l->data % 2) + listCountOddsRec(l->next);
 }
