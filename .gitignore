@@ -1,5 +1,4 @@
 # Future Contents
-Week 3/
 Week 4/
 Week 5/
 Week 7/
@@ -11,6 +10,7 @@ ass2/
 exam-files/
 Week */lesson.txt
 Week */solutions.txt
+Week */out
 files/
 *.code-workspace
 .DS_Store
