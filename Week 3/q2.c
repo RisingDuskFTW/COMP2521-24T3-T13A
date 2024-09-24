@@ -4,9 +4,18 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-// Time Complexity: O(...)
+// Time Complexity: O(n^2)
 bool hasTwoSum(int a[], int n, int v) {
-	// TODO
+	// for all values x in a
+	for (int i = 0; i < n; i++) {
+		// for all other values y in a
+		for (int j = i + 1; j < n; j++) {
+			// if they sum to v, return true
+			if (a[i] + a[j] == v) {
+				return true;
+			}
+		}
+	}
 	return false;
 }
 

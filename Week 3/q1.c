@@ -18,8 +18,20 @@ int main(int argc, char **argv) {
     return 0;
 }
 
-// Time Complexity: O(...)
+// Time Complexity: O(n)
 bool isPalindrome(char *s) {
-    // TODO
-    return false;
+    // how long is the string
+    int lo = 0;
+    int hi = strlen(s) - 1;   // O(n)
+    //  compare the first and last letter
+    // bubble inwards, comparing letters
+    // stop once we reach the middle
+    while (lo < hi) {       // O(n/2)
+        if (s[lo] != s[hi]) {
+            return false;
+        }
+        lo++;
+        hi--;
+    }
+    return true;
 }
