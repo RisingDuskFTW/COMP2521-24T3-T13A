@@ -23,3 +23,12 @@ Code created during my T13A tutorials for COMP2521 in 24T3
 - Recursion Q3: Checking a list is sorted
 - Recursion Q4: Deleting a value
 - Recursion Q6: Towers of Hanoi
+
+## Week 3: Sorting Algorithms & Time Complexity
+
+- Time Complexity Q0: Two Loops
+- Time Complexity Q1: Palindrome
+- Time Complexity Q2: Two Sum
+- Sorting Q1: Stable Sorting
+- Sorting Q2: Bubble & Insertion Sort
+- Sorting Q3: Merge Sort
