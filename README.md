@@ -32,3 +32,12 @@ Code created during my T13A tutorials for COMP2521 in 24T3
 - Sorting Q1: Stable Sorting
 - Sorting Q2: Bubble & Insertion Sort
 - Sorting Q3: Merge Sort
+
+## Week 4: ADTs & Binary Search Trees
+
+- ADT Q1: Using an ADT (Stack)
+- BST Q1: Insertion
+- BST Q2: Traversal
+- BST Q4: Count odd nodes
+- BST Q5: Count internal nodes
+- BST Q7: Find a node's level
