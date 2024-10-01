@@ -8,7 +8,23 @@ struct node {
 	struct node *right;
 };
 
+// Time Complexity = O(h)
 int BSTNodeLevel(struct node *t, int key) {
-    // TODO
-    return 42;
+	// base case: empty tree
+	if (t == NULL) {
+		return -1;
+	}
+
+	if (t->value == key) {
+		return 0;
+	}
+
+	if (key < t->value) {
+		int level = BSTNodeLevel(t->left, key);
+		if (level == -1) return -1;
+		return level + 1;
+	}
+	int level = BSTNodeLevel(t->right, key);
+	if (level == -1) return -1;
+	return level + 1;
 }

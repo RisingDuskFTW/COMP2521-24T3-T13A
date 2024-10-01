@@ -9,6 +9,14 @@ struct node {
 };
 
 int BSTreeCountOdds(struct node *t) {
-    // TODO
-    return 42;
+	if (t == NULL) {
+		return 0;
+	}
+	int count = 0;
+	if (t->value % 2 == 1) {
+		count++;
+	}
+    count += BSTreeCountOdds(t->left);
+    count += BSTreeCountOdds(t->right);
+	return count;
 }

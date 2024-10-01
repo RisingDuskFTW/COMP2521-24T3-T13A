@@ -25,10 +25,21 @@ void QueueFree(Queue q) {
 }
 
 void QueueEnqueue(Queue q, int item) {
-	// TODO
+	// move all elements from s1 to s2
+	while (StackSize(q->s1) > 0) {
+		int it = StackPop(q->s1);
+		StackPush(q->s2, it);
+	}
+	// add new item to s2
+	StackPush(q->s2, item);
+	// move all elements from s2 to s1
+	while (StackSize(q->s2) > 0) {
+		int it = StackPop(q->s2);
+		StackPush(q->s1, it);
+	}
 }
 
 int QueueDequeue(Queue q) {
-	// TODO
-	return 42;
+	int item = StackPop(q->s1);
+	return item;
 }

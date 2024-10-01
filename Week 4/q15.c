@@ -9,6 +9,15 @@ struct node {
 };
 
 int BSTreeCountInternal(struct node *t) {
-    // TODO
-    return 42;
+	// empty tree
+	if (t == NULL) {
+		return 0;
+	}
+	// leaf node
+	if (t->left == NULL && t->right == NULL) {
+		return 0;
+	}
+
+	// recursive case
+    return 1 + BSTreeCountInternal(t->left) + BSTreeCountInternal(t->right);
 }
