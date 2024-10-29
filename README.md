@@ -41,3 +41,21 @@ Code created during my T13A tutorials for COMP2521 in 24T3
 - BST Q4: Count odd nodes
 - BST Q5: Count internal nodes
 - BST Q7: Find a node's level
+
+## Week 5: AVL Trees, Graph Basics
+
+- Balancing Trees Q1: Tree Rotation
+- AVL Trees Q1: Inserting into an AVL Tree
+- Graphs Q1: Graph Terminology
+- Graphs Q2: Graph Representations
+- Graphs Q3: Adjacency Matrices
+- Assignment Introduction
+
+## Week 7: Graphs and Graph Traversal
+
+- Weighted and Directed Graphs
+- Graph Traversal: Breadth First Search & Depth First Search
+- Graph Theory Q1: More Terminology
+- Graph Theory Q2: Connected Components
+- Graph Theory Q3: Abstract Graph Problem
+- Graph Theory Q4: Euler / Hamiltonian Paths & Circuits
