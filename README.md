@@ -67,3 +67,22 @@ Code created during my T13A tutorials for COMP2521 in 24T3
 - Q3: Shortest Path (Dijkstra's Algorithm)
 - Q4: Minimum Spanning Tree (Kruskal's Algorithm)
 - Assignment Introduction
+
+## Week 9: Hash Tables
+
+- Q1: Hash Functions
+- Q3: Hash Collisions
+- Q2: Separate Chaining best/worst case
+- Q4: Bad Double Hashing
+- Q5: Hash Tables vs AVL Trees
+- Q6: Three Sum with a Hash Table
+
+## Week 10: Heaps and Tries
+
+- Heaps Q1: Heap as Array and Binary Tree
+– Heaps Q2: Heaps application
+- Tries Q1: Tries
+- Tries Q3: Insertion
+- Tries Q2 & Q4: Tries
+- Tries Q6: Tries application
+- Kahoot
